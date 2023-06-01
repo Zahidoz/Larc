@@ -1,0 +1,54 @@
+.aboutPage-s {
+  .container {
+    > img {
+      max-width: 100%;
+    }
+    .txt {
+        margin: 5em 0;
+      padding: 3em 5em;
+
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 3em;
+      .txt-desc {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        p {
+            letter-spacing: .04em;
+            max-width: 43em;
+          font-size: 1.4em;
+          font-weight: 400;
+          color: rgb(82, 82, 82);
+        }
+      }
+      .date {
+        display: flex;
+        align-items: start;
+        gap: 4em;
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 1em;
+          li {
+            font-size: 1.4em;
+            letter-spacing: .02em;
+            &.gray{
+                color: gray ;
+            }
+          }
+        }
+      }
+      @media screen and (max-width:780px){
+        flex-direction: column;
+        .date{
+            width: 100%;
+            justify-content: space-between;
+        }
+      }
+    }
+  }
+}
